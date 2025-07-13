@@ -42,9 +42,9 @@ public class GoogleAuthController {
     @Autowired
     private JwtUtil jwtUtil;
 
-    private String clientId = "506732058320-p2c9j93mosfpcesa5108bq2ac44tu7bj.apps.googleusercontent.com";
+    private String clientId;        // Your client id
 
-    private String clientSecret = "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";
+    private String clientSecret;    // Your client Secret
 
     @GetMapping("/callback")
     public ResponseEntity<?> handleGoogleCallback(@RequestParam String code){
